@@ -20,7 +20,10 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
+    - name: Download file
+      run: |
+        python main.py
+
     - name: Run tests
       run: |
-         echo 'le test a bien reussi'
-
+        echo 'Tests passed'
