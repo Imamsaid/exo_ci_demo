@@ -1,7 +1,7 @@
 import requests
 import pandas as pd
 
-def download_file(url, file_path):
+def download_file(url, file_path='dataset.csv'):
     response = requests.get(url)
     with open(file_path, 'wb') as file:
         file.write(response.content)
