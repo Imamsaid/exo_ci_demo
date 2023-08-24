@@ -1,14 +1,15 @@
 import requests
 import pandas as pd
+import numpy as np
 
 def download_file(url, file_path='dataset.csv'):
     response = requests.get(url)
     with open(file_path, 'wb') as file:
         file.write(response.content)
 
-""" def clean_data (file_path, choix_valeur_manquante='sup'):
-    df=pd.read_csv(file_path)
-    numericals = df.select_dtypes(include=['int64','float63']).columns
+def clean_data (file_path, choix_valeur_manquante='sup'):
+    df=pd.read_cs("https://docs.google.com/spreadsheets/d/1hNJGk3T9lp1e4jQsczf3T_IE9rDVvzvqI3HVz_9GWMA/edit#gid=0")
+    numericals = df.select_dtypes(include=['int64','float64']).columns
     categoricals =df.select_dtypes(include=['object']).columns
     #suppression de la duplication
     df.drop_duplicates(inplace=True)
@@ -47,4 +48,4 @@ def removeUnusedColumns(dataset_path='./data.csv', columns=[]):
     else:
         print('le jeu de données n\'inclu pas ces colonnes')
 
-    return df """
+    return df 
