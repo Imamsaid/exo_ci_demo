@@ -22,7 +22,7 @@ jobs:
         #ajout d'une nouvelle etape pour telecharger le jeu de donnée
     - name: Download file
       run: |
-        python main.py
+        python 'main.py'
 
     #- name: Data Cleaning
      # run: |
