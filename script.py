@@ -2,7 +2,7 @@ import requests
 import pandas as pd
 import numpy as np
 
-def download_file(url, file_path='dataset.csv'):
+def download_file(url, file_path='data.csv'):
     response = requests.get(url)
     with open(file_path, 'wb') as file:
         file.write(response.content)
