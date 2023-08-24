@@ -22,7 +22,7 @@ jobs:
         #ajout d'une nouvelle etape pour telecharger le jeu de donnée
     - name: Download file
       run: |
-       python -c 'from script import download_file; download_file("https://docs.google.com/spreadsheets/d/1hNJGk3T9lp1e4jQsczf3T_IE9rDVvzvqI3HVz_9GWMA/edit#gid=0","data.csv")'
+       python -c 'from script import download_file; download_file("https://drive.google.com/file/d/1Gqi0--vtp3vHR8CyhCH3LVTvdzj9fZIk/view?usp=drive_link","data.csv")'
 
 
     #- name: Data Cleaning

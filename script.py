@@ -7,7 +7,7 @@ def download_file(url, file_path='data.csv'):
     with open(file_path, 'wb') as file:
         file.write(response.content)
 
-def clean_data (file_path, choix_valeur_manquante='sup'):
+'''def clean_data (file_path, choix_valeur_manquante='sup'):
     df=pd.read_cs("https://docs.google.com/spreadsheets/d/1hNJGk3T9lp1e4jQsczf3T_IE9rDVvzvqI3HVz_9GWMA/edit#gid=0")
     numericals = df.select_dtypes(include=['int64','float64']).columns
     categoricals =df.select_dtypes(include=['object']).columns
@@ -48,4 +48,4 @@ def removeUnusedColumns(dataset_path='./data.csv', columns=[]):
     else:
         print('le jeu de données n\'inclu pas ces colonnes')
 
-    return df 
+    return df '''
